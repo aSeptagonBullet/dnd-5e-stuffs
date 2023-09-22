@@ -1,0 +1,1581 @@
+{
+	"fileType": "5etools",
+	"siteVersion": "1.187.1",
+	"sync": {
+		"HOMEBREW_2_STORAGE_METAS": [
+			{
+				"docIdLocal": "2f7fcf98-580c-420d-944d-e55829e97fec",
+				"_meta": {
+					"sources": [
+						{
+							"json": "TyranidL8oneshot",
+							"abbreviation": "NID1s",
+							"full": "Tyranid L8 oneshot",
+							"url": "",
+							"authors": [
+								"AGreene"
+							],
+							"convertedBy": [],
+							"color": "#b35900"
+						}
+					]
+				}
+			}
+		]
+	},
+	"async": {
+		"HOMEBREW_2_STORAGE_MIGRATION": 2,
+		"HOMEBREW_2_STORAGE": [
+			{
+				"head": {
+					"docIdLocal": "2f7fcf98-580c-420d-944d-e55829e97fec",
+					"timeAdded": 1695351608803,
+					"checksum": "57252d527bc37196ecf5085b91f75351",
+					"url": null,
+					"filename": null,
+					"isLocal": false,
+					"isEditable": true
+				},
+				"body": {
+					"_meta": {
+						"sources": [
+							{
+								"json": "TyranidL8oneshot",
+								"abbreviation": "NID1s",
+								"full": "Tyranid L8 oneshot",
+								"url": "",
+								"authors": [
+									"AGreene"
+								],
+								"convertedBy": [],
+								"color": "#b35900"
+							}
+						]
+					},
+					"monster": [
+						{
+							"uniqueId": "058bd8b6-3af6-4c05-8820-8182f93c58ad",
+							"name": "Large Ripper Swarm",
+							"size": [
+								"L"
+							],
+							"type": {
+								"type": {
+									"choose": [
+										"monstrosity",
+										"aberration"
+									]
+								},
+								"swarmSize": "T"
+							},
+							"source": "TyranidL8oneshot",
+							"alignment": [
+								{
+									"special": "Unaligned"
+								}
+							],
+							"ac": [
+								{
+									"ac": 10,
+									"from": [
+										"natural armor, Carapace"
+									]
+								}
+							],
+							"hp": {
+								"special": "40"
+							},
+							"speed": {
+								"walk": 30,
+								"burrow": 30
+							},
+							"str": 11,
+							"dex": 16,
+							"con": 9,
+							"int": 5,
+							"wis": 14,
+							"cha": 8,
+							"passive": 15,
+							"cr": "5",
+							"shortName": "Rippers",
+							"senses": [
+								"blindsight 60 ft.",
+								"darkvision 60 ft."
+							],
+							"senseTags": [
+								"B",
+								"D"
+							],
+							"skill": {
+								"perception": "+5",
+								"stealth": "+6"
+							},
+							"save": {
+								"wis": "+5",
+								"dex": "+6",
+								"int": "+0"
+							},
+							"vulnerable": [
+								{
+									"vulnerable": [
+										"psychic"
+									]
+								},
+								{
+									"vulnerable": [],
+									"preNote": "AOE"
+								}
+							],
+							"resist": [
+								{
+									"resist": [
+										"acid"
+									],
+									"preNote": "DR-8"
+								},
+								{
+									"resist": [
+										"poison"
+									],
+									"preNote": "DR-10"
+								},
+								{
+									"resist": [
+										"bludgeoning",
+										"piercing",
+										"slashing"
+									]
+								}
+							],
+							"conditionImmune": [
+								{
+									"conditionImmune": [
+										"charmed",
+										"frightened"
+									],
+									"preNote": "When in range of Synapse Creature"
+								},
+								{
+									"conditionImmune": [
+										"prone"
+									]
+								}
+							],
+							"trait": [
+								{
+									"name": "Swarm (Swarm of Rippers)",
+									"entries": [
+										"The rippers can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny ripper. The swarm can't regain hit points or gain temporary hit points. Every 5 HP destroys a ripper and the swarm deals {@dice 1d6} less piercing and acid damage."
+									]
+								},
+								{
+									"name": "Hive Mind",
+									"entries": [
+										"If at the start of its turn, the swarm is within its telepathy ranges of an allied Tyranid creature with the Synapse Creature trait, the swarm is immune to the {@condition charmed} and {@condition frightened} conditions and gains advantage on any Wisdom saving throws until the start of its next turn. Otherwise, the swarm reverts to its animal instincts: roll {@dice 1d3} and compare the result to the Instinctive Behavior options below to determine how the swarm acts this turn.",
+										"1: Hide. The swarm uses all available movement to seek the nearest available cover and position itself behind it, using its action to make a Dexterity (Stealth) check to Hide once there. If no cover is visible within the swarm's movement range, it drop takes the Dodge action.",
+										"2: Flee. The swarm uses all available movement to run towards the nearest Tyranid creature it can see that has the Synapse trait. If none are visible from the swarm's position, it uses all of its movement to move away from any and all hostile creatures. It uses no actions except to Dash, or to remove any objects or creatures preventing it from fleeing.",
+										"3: Berserk. The swarm uses its movement to move within reach of the nearest creature it can see and uses its action to attack it. If the swarm is not within its movement range of any creature, it may use Dash to move towards the nearest creature more quickly. If the swarm cannot see any creatures, it will wander aimlessly, and make Wisdom (Perception) checks to try and detect the presence of any creatures to attack."
+									]
+								}
+							],
+							"isNamedCreature": true,
+							"action": [
+								{
+									"name": "Multi Attack Bite",
+									"entries": [
+										"{@atk mw} {@hit 5} to hit, reach 0 ft., targets in Ripper's space. {@h}5 ({@damage 1d4 + 3}) piercing damage, plus 2 ({@damage 1d4}) acid damage. 1 Attack for each ripper in swarm base 8 attacks."
+									]
+								}
+							],
+							"miscTags": [
+								"MW"
+							],
+							"fluff": {
+								"entries": [
+									"Rippers (Minoris omniphagea) are a small, maggot-like species of Tyranids that serve as the primary means of devouring bio-mass from a planet for a Tyranid hive fleet. Indeed, Ripper swarms facilitate the speed and scale that Tyranids are infamous for in the stripping of a planet of all of its natural resources.  "
+								],
+								"images": [
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://www.belloflostsouls.net/wp-content/uploads/2017/08/tyranid-Ripper-Swarm.jpg"
+										}
+									}
+								]
+							},
+							"tokenUrl": "https://www.belloflostsouls.net/wp-content/uploads/2017/08/tyranid-Ripper-Swarm.jpg",
+							"damageTags": [
+								"A",
+								"P"
+							]
+						},
+						{
+							"uniqueId": "83c08353-2063-4eef-a694-bcc6f22ce79d",
+							"name": "Hormagaunt",
+							"size": [
+								"M"
+							],
+							"type": {
+								"type": {
+									"choose": [
+										"monstrosity",
+										"aberration"
+									]
+								}
+							},
+							"source": "TyranidL8oneshot",
+							"alignment": [
+								"U"
+							],
+							"ac": [
+								{
+									"ac": 14,
+									"from": [
+										"Carapace"
+									]
+								}
+							],
+							"hp": {
+								"special": "21"
+							},
+							"speed": {
+								"walk": 40
+							},
+							"str": 15,
+							"dex": 14,
+							"con": 13,
+							"int": 5,
+							"wis": 14,
+							"cha": 8,
+							"passive": 12,
+							"senses": [
+								"darkvision 60 ft."
+							],
+							"senseTags": [
+								"D"
+							],
+							"save": {
+								"str": "+5",
+								"wis": "+5",
+								"int": "+0"
+							},
+							"skill": {
+								"acrobatics": "+5",
+								"athletics": "+5"
+							},
+							"vulnerable": [
+								"psychic"
+							],
+							"resist": [
+								{
+									"resist": [
+										"bludgeoning",
+										"piercing",
+										"slashing"
+									],
+									"preNote": "Non Magical Non Adamantine"
+								},
+								{
+									"resist": [
+										"acid",
+										"poison"
+									],
+									"preNote": "DR-8"
+								}
+							],
+							"trait": [
+								{
+									"name": "Adrenal Glands",
+									"entries": [
+										"If the Hormagaunt uses the Dash action on its turn and moves at least 20' straight towards a creature, ending its movement within reach of that creature, the Hormagaunt may make two scything talon attacks with against that creature as part of the Dash action. "
+									]
+								},
+								{
+									"name": "Extra Limbs",
+									"entries": [
+										"If the hormagaunt has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+									]
+								},
+								{
+									"name": "Fleet of Claw",
+									"entries": [
+										"When the hormagaunt uses the Dash action, its movement speed increases by 10' for the purpose of that Dash. 90 feet"
+									]
+								},
+								{
+									"name": "Hive Mind",
+									"entries": [
+										"If at the start of its turn, the swarm is within its telepathy ranges of an allied Tyranid creature with the Synapse Creature trait, the swarm is immune to the {@condition charmed} and {@condition frightened} conditions and gains advantage on any Wisdom saving throws until the start of its next turn. Otherwise, the swarm reverts to its animal instincts: roll {@dice 1d3} and compare the result to the Instinctive Behavior options below to determine how the swarm acts this turn.",
+										"1: Hide. The swarm uses all available movement to seek the nearest available cover and position itself behind it, using its action to make a Dexterity (Stealth) check to Hide once there. If no cover is visible within the swarm's movement range, it drop takes the Dodge action.",
+										"2: Flee. The swarm uses all available movement to run towards the nearest Tyranid creature it can see that has the Synapse trait. If none are visible from the swarm's position, it uses all of its movement to move away from any and all hostile creatures. It uses no actions except to Dash, or to remove any objects or creatures preventing it from fleeing.",
+										"3: Berserk. The swarm uses its movement to move within reach of the nearest creature it can see and uses its action to attack it. If the swarm is not within its movement range of any creature, it may use Dash to move towards the nearest creature more quickly. If the swarm cannot see any creatures, it will wander aimlessly, and make Wisdom (Perception) checks to try and detect the presence of any creatures to attack."
+									]
+								}
+							],
+							"conditionImmune": [
+								{
+									"conditionImmune": [
+										"charmed",
+										"frightened"
+									],
+									"preNote": "If within range of a Synapse Creature"
+								}
+							],
+							"action": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The Hormagaunt makes two attacks with its scything talons."
+									]
+								},
+								{
+									"name": "Scything Talon",
+									"entries": [
+										"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+									]
+								}
+							],
+							"actionTags": [
+								"Multiattack"
+							],
+							"miscTags": [
+								"MW"
+							],
+							"bonus": [
+								{
+									"name": "Extra Limbs",
+									"entries": [
+										"If the Hormagaunt has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+									]
+								}
+							],
+							"tokenUrl": "https://wh40k.lexicanum.com/mediawiki/images/thumb/7/74/Hormagaunt2.jpg/267px-Hormagaunt2.jpg",
+							"fluff": {
+								"entries": [
+									"A Hormagaunt is one of the most dangerous Tyranid creatures in a Hive Fleet. Not because of their size or particular viciousness, but because they multiply out of control. When attacking a planet, Hormagaunts are seeded onto the target world by Mycetic Spores. They quickly reproduce and then rampage across the planet killing anything they find."
+								],
+								"images": [
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://wh40k.lexicanum.com/mediawiki/images/thumb/7/74/Hormagaunt2.jpg/267px-Hormagaunt2.jpg"
+										}
+									}
+								]
+							},
+							"cr": "5",
+							"damageTags": [
+								"S"
+							]
+						},
+						{
+							"uniqueId": "fbbefe82-c030-4e60-9525-15772258a0ce",
+							"name": "Tyranid Warrior",
+							"size": [
+								"L"
+							],
+							"type": {
+								"type": {
+									"choose": [
+										"monstrosity",
+										"aberration"
+									]
+								}
+							},
+							"source": "TyranidL8oneshot",
+							"alignment": [
+								"U"
+							],
+							"ac": [
+								{
+									"ac": 17,
+									"from": [
+										"Carapace"
+									]
+								}
+							],
+							"hp": {
+								"special": "51"
+							},
+							"speed": {
+								"walk": 40
+							},
+							"str": 18,
+							"dex": 16,
+							"con": 15,
+							"int": 10,
+							"wis": 14,
+							"cha": 8,
+							"passive": 12,
+							"senses": [
+								"darkvision 60 ft",
+								"Tyranid Telepathy 100 feet"
+							],
+							"senseTags": [
+								"D"
+							],
+							"save": {
+								"str": "+8",
+								"int": "+4",
+								"wis": "+6"
+							},
+							"vulnerable": [
+								"psychic"
+							],
+							"resist": [
+								{
+									"resist": [
+										"bludgeoning",
+										"piercing",
+										"slashing"
+									],
+									"preNote": "Non Magical Non Adamantine"
+								},
+								{
+									"resist": [
+										"acid",
+										"poison"
+									],
+									"preNote": "DR-10"
+								}
+							],
+							"trait": [
+								{
+									"name": "Extra Limbs",
+									"entries": [
+										"If the Tyranid Warrior has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+									]
+								},
+								{
+									"name": "Synapse Creature",
+									"entries": [
+										"Tyranid creatures who are within the telepathy range of a Tyranid Warrior gain the benefits of their Hive Mind trait and do not revert to their instinctive behaviors. "
+									]
+								},
+								{
+									"name": "Shadow in the Warp",
+									"entries": [
+										"All enemy creatures within 50ft of the Warrior make spell attacks at disadvantage. The Warrior makes Wis saving throws with advantage"
+									]
+								}
+							],
+							"conditionImmune": [
+								{
+									"conditionImmune": [
+										"charmed",
+										"frightened"
+									],
+									"preNote": "If within range of a Synapse Creature"
+								}
+							],
+							"action": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The Warrior makes two attacks with its rending talons."
+									]
+								},
+								{
+									"name": "Rending Talon",
+									"entries": [
+										"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d6 + 8}) slashing damage."
+									]
+								},
+								{
+									"name": "Deathspitter",
+									"entries": [
+										"{@atk rw} {@hit 3} to hit, range 60/90 ft., one target. {@h}9 ({@damage 1d12 + 3}) piercing damage, plus 4 ({@damage 1d8}) acid damage. Additionally, all creatures within five feet of target must make a dc14 dexterity saving throw or take 4 ({@damage 1d8}) acid damage."
+									]
+								}
+							],
+							"actionTags": [
+								"Multiattack"
+							],
+							"miscTags": [
+								"MW",
+								"RW"
+							],
+							"bonus": [
+								{
+									"name": "Extra Limbs",
+									"entries": [
+										"If the Tyranid Warrior has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+									]
+								}
+							],
+							"tokenUrl": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg",
+							"fluff": {
+								"entries": [
+									"Termagants are fast, agile and cunning Tyranid creatures of the Gaunt genus. While not very strong individually, Termagants will overwhelm much more elite foes with superior numbers and support from larger Tyranid breeds."
+								],
+								"images": [
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg"
+										}
+									}
+								]
+							},
+							"skill": {
+								"athletics": "+8"
+							},
+							"languages": [
+								"Tyranid Telepathy"
+							],
+							"damageTags": [
+								"A",
+								"P",
+								"S"
+							]
+						},
+						{
+							"uniqueId": "9803cafb-0ff2-4385-a075-91d2bba23bc0",
+							"name": "Termagaunt",
+							"size": [
+								"M"
+							],
+							"type": {
+								"type": {
+									"choose": [
+										"monstrosity",
+										"aberration"
+									]
+								}
+							},
+							"source": "TyranidL8oneshot",
+							"alignment": [
+								"U"
+							],
+							"ac": [
+								{
+									"ac": 14,
+									"from": [
+										"Carapace"
+									]
+								}
+							],
+							"hp": {
+								"special": "21"
+							},
+							"speed": {
+								"walk": 40
+							},
+							"str": 13,
+							"dex": 15,
+							"con": 13,
+							"int": 5,
+							"wis": 14,
+							"cha": 8,
+							"passive": 12,
+							"senses": [
+								"darkvision 60 ft."
+							],
+							"senseTags": [
+								"D"
+							],
+							"save": {
+								"dex": "+5",
+								"int": "+0",
+								"wis": "+5"
+							},
+							"skill": {
+								"acrobatics": "+5",
+								"athletics": "+5"
+							},
+							"vulnerable": [
+								"psychic"
+							],
+							"resist": [
+								{
+									"resist": [
+										"bludgeoning",
+										"piercing",
+										"slashing"
+									],
+									"preNote": "Non Magical Non Adamantine"
+								},
+								{
+									"resist": [
+										"acid",
+										"poison"
+									],
+									"preNote": "DR-8"
+								}
+							],
+							"trait": [
+								{
+									"name": "Bio Fusilade",
+									"entries": [
+										"If the Termagant has not moved this turn, it may spend all of its movement this round to make an extra Devourer attack against a target within reach as a bonus action."
+									]
+								},
+								{
+									"name": "Hive Mind",
+									"entries": [
+										"If at the start of its turn, the swarm is within its telepathy ranges of an allied Tyranid creature with the Synapse Creature trait, the swarm is immune to the {@condition charmed} and {@condition frightened} conditions and gains advantage on any Wisdom saving throws until the start of its next turn. Otherwise, the swarm reverts to its animal instincts: roll {@dice 1d3} and compare the result to the Instinctive Behavior options below to determine how the swarm acts this turn.",
+										"1: Hide. The swarm uses all available movement to seek the nearest available cover and position itself behind it, using its action to make a Dexterity (Stealth) check to Hide once there. If no cover is visible within the swarm's movement range, it drop takes the Dodge action.",
+										"2: Flee. The swarm uses all available movement to run towards the nearest Tyranid creature it can see that has the Synapse trait. If none are visible from the swarm's position, it uses all of its movement to move away from any and all hostile creatures. It uses no actions except to Dash, or to remove any objects or creatures preventing it from fleeing.",
+										"3: Berserk. The swarm uses its movement to move within reach of the nearest creature it can see and uses its action to attack it. If the swarm is not within its movement range of any creature, it may use Dash to move towards the nearest creature more quickly. If the swarm cannot see any creatures, it will wander aimlessly, and make Wisdom (Perception) checks to try and detect the presence of any creatures to attack."
+									]
+								}
+							],
+							"conditionImmune": [
+								{
+									"conditionImmune": [
+										"charmed",
+										"frightened"
+									],
+									"preNote": "If within range of a Synapse Creature"
+								}
+							],
+							"action": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The Termagaunt makes two attacks with its scything talons."
+									]
+								},
+								{
+									"name": "Scything Talon",
+									"entries": [
+										"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+									]
+								},
+								{
+									"name": "Devourer",
+									"entries": [
+										"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 3 ({@damage 1d6}) acid damage plus 3 ({@damage 1d6}) poison damage. Termagaunt may have either Spine Fist or Devourer, not both."
+									]
+								},
+								{
+									"name": "Spine Fist",
+									"entries": [
+										"{@atk rw} {@hit 5} to hit, range 10/30 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, plus 2 ({@damage 1d4}) acid damage. This weapon may fire twice. With Bio Fusillade 4 times. Termagaunt may have either Spine Fist or Devourer, not both."
+									]
+								}
+							],
+							"actionTags": [
+								"Multiattack"
+							],
+							"miscTags": [
+								"MW",
+								"RW"
+							],
+							"bonus": [
+								{
+									"name": "Bio Fusilade",
+									"entries": [
+										"If the Termagant has not moved this turn, it may spend all of its movement this round to make two Devourer attacks against a target within reach as a bonus action."
+									]
+								}
+							],
+							"tokenUrl": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg",
+							"fluff": {
+								"entries": [
+									"Termagants are fast, agile and cunning Tyranid creatures of the Gaunt genus. While not very strong individually, Termagants will overwhelm much more elite foes with superior numbers and support from larger Tyranid breeds."
+								],
+								"images": [
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg"
+										}
+									}
+								]
+							},
+							"cr": "5",
+							"damageTags": [
+								"A",
+								"I",
+								"P",
+								"S"
+							]
+						},
+						{
+							"name": "Genestealer Cultist",
+							"source": "TyranidL8oneshot",
+							"page": 345,
+							"basicRules": true,
+							"size": [
+								"M"
+							],
+							"type": {
+								"type": {
+									"choose": [
+										"humanoid",
+										"monstrosity"
+									]
+								},
+								"tags": [
+									"any race"
+								]
+							},
+							"alignment": [
+								"L",
+								"NX",
+								"C",
+								"NY",
+								"E"
+							],
+							"ac": [
+								12
+							],
+							"hp": {
+								"formula": "3d8 + 3",
+								"average": 16
+							},
+							"speed": {
+								"walk": 30
+							},
+							"str": 11,
+							"dex": 14,
+							"con": 12,
+							"int": 10,
+							"wis": 11,
+							"cha": 10,
+							"skill": {
+								"deception": "+2",
+								"religion": "+2"
+							},
+							"passive": 10,
+							"languages": [
+								"Common",
+								"Tyranid Telepathy 30ft"
+							],
+							"cr": "1",
+							"trait": [
+								{
+									"name": "Genstealer Cult",
+									"entries": [
+										"The cultist has advantage on saving throws against being {@condition charmed} or {@condition frightened} when in telepathy range of any other Genestealer Cultist, Genestealer, Brood Lord, or Synapse Creature."
+									]
+								},
+								{
+									"name": "Uncanny",
+									"entries": [
+										"Creatures with this trait present as a typical member of their original species. A dc 15 insight or perception check will reveal that those with this trait are functioning together too well. A dc 19 insight or arcana check will reveal that those with this trait have a hive mind like bond. A dc 18 perception check, skin is slightly more rigid then a specimen of this species."
+									]
+								},
+								{
+									"name": "Brood Mind",
+									"entries": [
+										"Creatures with this trait are under the control of a Genestealer or Brood Lord. They may communicate telepathically with any other creature with this trait."
+									]
+								}
+							],
+							"action": [
+								{
+									"name": "Scimitar",
+									"entries": [
+										"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}19 ({@damage 5d6 + 2}) slashing damage."
+									]
+								},
+								{
+									"name": "Rusty Pistol",
+									"entries": [
+										"{@atk rw} {@hit +4} to hit, range 30/90 ft., one target. {@h}7 ({@damage 1d6 + 2}) piercing damage. Misfire 4, loading 3"
+									]
+								}
+							],
+							"environment": [
+								"urban"
+							],
+							"soundClip": {
+								"type": "external",
+								"url": "https://5e.tools/audio/bestiary/cultist.mp3"
+							},
+							"attachedItems": [
+								"scimitar|phb"
+							],
+							"languageTags": [
+								"C"
+							],
+							"miscTags": [
+								"MW",
+								"MLW",
+								"RW"
+							],
+							"hasFluff": true,
+							"hasFluffImages": true,
+							"tokenUrl": "https://5e.tools/img/MM/Cultist.png",
+							"fluff": {
+								"name": "Cultist",
+								"source": "MM",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"entries": [
+													"Cultists swear allegiance to dark powers such as elemental princes, demon lords, or archdevils. Most conceal their loyalties to avoid being ostracized, imprisoned, or executed for their beliefs. Unlike evil acolytes, cultists often show signs of insanity in their beliefs and practices."
+												]
+											}
+										]
+									}
+								],
+								"images": [
+									{
+										"type": "image",
+										"href": {
+											"type": "internal",
+											"path": "bestiary/MM/Cultist.png"
+										}
+									}
+								]
+							},
+							"uniqueId": "e81c4407-86d2-4e83-b05c-6530b39aba32",
+							"vulnerable": [],
+							"resist": [
+								{
+									"resist": [
+										"acid",
+										"poison"
+									],
+									"preNote": "DR-2"
+								}
+							],
+							"senses": [
+								"Tyranid Telepathy 30ft"
+							],
+							"damageTags": [
+								"P",
+								"S"
+							]
+						},
+						{
+							"name": "Genestealer Purestrain",
+							"source": "TyranidL8oneshot",
+							"size": [
+								"M"
+							],
+							"type": {
+								"type": {
+									"choose": [
+										"aberration",
+										"monstrosity"
+									]
+								},
+								"tags": [
+									"any race"
+								]
+							},
+							"alignment": [
+								"U"
+							],
+							"ac": [
+								{
+									"ac": 15,
+									"from": [
+										"Carapace"
+									]
+								}
+							],
+							"hp": {
+								"special": "51"
+							},
+							"speed": {
+								"walk": 40
+							},
+							"str": 14,
+							"dex": 18,
+							"con": 14,
+							"int": 9,
+							"wis": 14,
+							"cha": 9,
+							"save": {
+								"dex": "+6",
+								"int": "+4",
+								"wis": "+6"
+							},
+							"skill": {
+								"acrobatics": "+7",
+								"perception": "+6",
+								"stealth": "+7"
+							},
+							"passive": 16,
+							"resist": [
+								"acid",
+								"poison"
+							],
+							"languages": [
+								"Tyranid Telepathy"
+							],
+							"cr": "9",
+							"trait": [
+								{
+									"name": "Pack Tactics",
+									"entries": [
+										"The genestealer purestrain has advantage on an attack roll against a creature if at least one of the genestealer purestrain's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+									]
+								},
+								{
+									"name": "Genestealer's Kiss",
+									"entries": [
+										"Through the use of a tube-like tongue called an Ovipositor they insert a tiny embryonic organism containing their own genetic material into a host victim. Over time this organism alters the host's genetic code, and their consciousness is also completely suppressed by a localized version of the Hive Mind, known as the Brood Mind, becoming a virtual slave. Target must be {@condition unconscious} or {@condition incapacitated}. The oviposition process takes 1 hour to implant, and 3 days to fully take effect. Target may be cured by  5th level or above spells like greater restoration if within the 3 day germination period. After fully matured only a wish spell may cure the target."
+									]
+								},
+								{
+									"name": "Ambusher",
+									"entries": [
+										"During its first turn, the genestealer purestrain has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the genestealer purestrain scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+									]
+								},
+								{
+									"name": "Evasion",
+									"entries": [
+										"If the genestealer purestrain is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the genestealer purestrain instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+									]
+								},
+								{
+									"name": "Brood Mind",
+									"entries": [
+										"Genestealers have an interlinking telepathy similar to the greater Hive Mind which is generated by the entire Tyranid race. This Brood Mind is smaller and more localised than the Hive Mind and is used to exert complete control over their host victims and also for communication. Their telepathic link with each other can function clearly and without restriction (such as from intervening objects or other forms of shielding) up to 2 miles"
+									]
+								}
+							],
+							"action": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The genestealer makes two rending claw attacks."
+									]
+								},
+								{
+									"name": "Rending Claw",
+									"entries": [
+										"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage, and the target must make a {@dc 15} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage on a failed save, or half as much damage on a successful one."
+									]
+								}
+							],
+							"environment": [
+								"urban"
+							],
+							"soundClip": {
+								"type": "external",
+								"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+							},
+							"traitTags": [
+								"Ambusher",
+								"Pack Tactics",
+								"Sneak Attack"
+							],
+							"actionTags": [
+								"Multiattack"
+							],
+							"miscTags": [
+								"MW"
+							],
+							"hasFluff": true,
+							"hasFluffImages": true,
+							"tokenUrl": "https://5e.tools/img/MM/Assassin.png",
+							"fluff": {
+								"name": "Assassin",
+								"source": "MM",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"entries": [
+													"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+												]
+											}
+										]
+									}
+								],
+								"images": [
+									{
+										"type": "image",
+										"href": {
+											"type": "internal",
+											"path": "bestiary/MM/Assassin.webp"
+										}
+									}
+								]
+							},
+							"uniqueId": "ce8a8559-9ec1-491f-9803-b5927e8cf294",
+							"senses": [
+								"Tyranid Telepathy 60ft",
+								"darkvision 60 ft",
+								"brood mind 2 miles"
+							],
+							"senseTags": [
+								"D"
+							],
+							"vulnerable": [
+								"psychic"
+							],
+							"damageTags": [
+								"I",
+								"S"
+							],
+							"savingThrowForced": [
+								"constitution"
+							]
+						},
+						{
+							"uniqueId": "a69b62cf-44b1-4a38-81c2-0fb7cc9f2c64",
+							"name": "Brood Lord",
+							"size": [
+								"L"
+							],
+							"type": {
+								"type": {
+									"choose": [
+										"monstrosity",
+										"aberration"
+									]
+								}
+							},
+							"source": "TyranidL8oneshot",
+							"alignment": [
+								"U"
+							],
+							"ac": [
+								{
+									"ac": 17,
+									"from": [
+										"Carapace"
+									]
+								}
+							],
+							"hp": {
+								"special": "80"
+							},
+							"speed": {
+								"walk": 40
+							},
+							"str": 18,
+							"dex": 16,
+							"con": 15,
+							"int": 10,
+							"wis": 14,
+							"cha": 8,
+							"passive": 12,
+							"senses": [
+								"darkvision 60 ft",
+								"Tyranid Telepathy 100 feet"
+							],
+							"senseTags": [
+								"D"
+							],
+							"save": {
+								"str": "+8",
+								"int": "+4",
+								"wis": "+6"
+							},
+							"vulnerable": [],
+							"resist": [
+								{
+									"resist": [
+										"bludgeoning",
+										"piercing",
+										"slashing"
+									],
+									"preNote": "Non Magical Non Adamantine"
+								},
+								{
+									"resist": [
+										"acid",
+										"poison"
+									],
+									"preNote": "DR-10"
+								}
+							],
+							"trait": [
+								{
+									"name": "Extra Limbs",
+									"entries": [
+										"If the Brood Lord has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+									]
+								},
+								{
+									"name": "Synapse Creature",
+									"entries": [
+										"Tyranid creatures who are within the telepathy range of a Brood Lord gain the benefits of their Hive Mind trait and do not revert to their instinctive behaviors. "
+									]
+								},
+								{
+									"name": "Shadow in the Warp",
+									"entries": [
+										"All enemy creatures within 60ft of the Brood Lord make spell attacks at disadvantage. The Warrior makes Wis saving throws with advantage"
+									]
+								},
+								{
+									"name": "Call the Swarm",
+									"entries": [
+										"When below half hitpoints the Brood Lord will call on near by members of the Tyranid swarm. As a Full round action it may psychically teleport up to 5 Tyranid organisms to its self. the teleported Tyranids appear 90 feet away from the Brood Lord"
+									]
+								}
+							],
+							"conditionImmune": [
+								{
+									"conditionImmune": [
+										"charmed",
+										"frightened"
+									],
+									"preNote": "If within range of a Synapse Creature"
+								}
+							],
+							"action": [
+								{
+									"name": "Multiattack",
+									"entries": [
+										"The Brood Lord makes four attacks with its Monsterous Rending Talon."
+									]
+								},
+								{
+									"name": "Monsterous Rending Talon",
+									"entries": [
+										"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+									]
+								},
+								{
+									"name": "Frightful Presence",
+									"entries": [
+										"Each creature of the Broodlord choice that is within 120 feet of the Broodlord and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the Broodlord Frightful Presence for the next 24 hours."
+									]
+								}
+							],
+							"actionTags": [
+								"Frightful Presence",
+								"Multiattack"
+							],
+							"miscTags": [
+								"MW"
+							],
+							"bonus": [
+								{
+									"name": "Extra Limbs",
+									"entries": [
+										"If the Brood Lord has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+									]
+								}
+							],
+							"tokenUrl": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg",
+							"fluff": {
+								"entries": [
+									"Termagants are fast, agile and cunning Tyranid creatures of the Gaunt genus. While not very strong individually, Termagants will overwhelm much more elite foes with superior numbers and support from larger Tyranid breeds."
+								],
+								"images": [
+									{
+										"type": "image",
+										"href": {
+											"type": "external",
+											"url": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg"
+										}
+									}
+								]
+							},
+							"skill": {
+								"athletics": "+8"
+							},
+							"languages": [
+								"Tyranid Telepathy"
+							],
+							"cr": "9",
+							"conditionInflict": [
+								"frightened"
+							],
+							"legendaryActions": 3,
+							"legendaryHeader": [
+								"The monster can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn if it rolls a 5 or 6 on a d6."
+							],
+							"legendary": [
+								{
+									"name": "Monstrous Rending talon Attack",
+									"entries": [
+										"The Broodlord makes one Monstrous rending talon attack."
+									]
+								},
+								{
+									"name": "Wrath of the Hive Mind",
+									"entries": [
+										"Smite. Ranged Spell Attack: {@hit 5} to hit, range 30 ft., one target. {@h}{@damage 6d6} psychic damage. On a 20, the damage increases to {@damage 13d6} psychic damage."
+									]
+								},
+								{
+									"name": "Oh God, So Many Limbs",
+									"entries": [
+										"It can spend 15 feet of movement to escape from nonmagical restraints or being {@condition grappled}.  "
+									]
+								}
+							],
+							"damageTags": [
+								"S"
+							],
+							"savingThrowForced": [
+								"wisdom"
+							]
+						}
+					]
+				}
+			}
+		],
+		"brewbuilderState_makebrew.html": {
+			"builders": {
+				"creatureBuilder": {
+					"s": {
+						"uniqueId": "a69b62cf-44b1-4a38-81c2-0fb7cc9f2c64",
+						"name": "Brood Lord",
+						"size": [
+							"L"
+						],
+						"type": {
+							"type": {
+								"choose": [
+									"monstrosity",
+									"aberration"
+								]
+							}
+						},
+						"source": "TyranidL8oneshot",
+						"alignment": [
+							"U"
+						],
+						"ac": [
+							{
+								"ac": 17,
+								"from": [
+									"Carapace"
+								]
+							}
+						],
+						"hp": {
+							"special": "80"
+						},
+						"speed": {
+							"walk": 40
+						},
+						"str": 18,
+						"dex": 16,
+						"con": 15,
+						"int": 10,
+						"wis": 14,
+						"cha": 8,
+						"passive": 12,
+						"senses": [
+							"darkvision 60 ft",
+							"Tyranid Telepathy 100 feet"
+						],
+						"senseTags": [
+							"D"
+						],
+						"save": {
+							"str": "+8",
+							"int": "+4",
+							"wis": "+6"
+						},
+						"vulnerable": [],
+						"resist": [
+							{
+								"resist": [
+									"bludgeoning",
+									"piercing",
+									"slashing"
+								],
+								"preNote": "Non Magical Non Adamantine"
+							},
+							{
+								"resist": [
+									"acid",
+									"poison"
+								],
+								"preNote": "DR-10"
+							}
+						],
+						"trait": [
+							{
+								"name": "Extra Limbs",
+								"entries": [
+									"If the Brood Lord has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+								]
+							},
+							{
+								"name": "Synapse Creature",
+								"entries": [
+									"Tyranid creatures who are within the telepathy range of a Brood Lord gain the benefits of their Hive Mind trait and do not revert to their instinctive behaviors. "
+								]
+							},
+							{
+								"name": "Shadow in the Warp",
+								"entries": [
+									"All enemy creatures within 60ft of the Brood Lord make spell attacks at disadvantage. The Warrior makes Wis saving throws with advantage"
+								]
+							},
+							{
+								"name": "Call the Swarm",
+								"entries": [
+									"When below half hitpoints the Brood Lord will call on near by members of the Tyranid swarm. As a Full round action it may psychically teleport up to 5 Tyranid organisms to its self. the teleported Tyranids appear 90 feet away from the Brood Lord"
+								]
+							}
+						],
+						"conditionImmune": [
+							{
+								"conditionImmune": [
+									"charmed",
+									"frightened"
+								],
+								"preNote": "If within range of a Synapse Creature"
+							}
+						],
+						"action": [
+							{
+								"name": "Multiattack",
+								"entries": [
+									"The Brood Lord makes four attacks with its Monsterous Rending Talon."
+								]
+							},
+							{
+								"name": "Monsterous Rending Talon",
+								"entries": [
+									"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+								]
+							},
+							{
+								"name": "Frightful Presence",
+								"entries": [
+									"Each creature of the Broodlord choice that is within 120 feet of the Broodlord and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the Broodlord Frightful Presence for the next 24 hours."
+								]
+							}
+						],
+						"actionTags": [
+							"Frightful Presence",
+							"Multiattack"
+						],
+						"miscTags": [
+							"MW"
+						],
+						"bonus": [
+							{
+								"name": "Extra Limbs",
+								"entries": [
+									"If the Brood Lord has not moved this turn, it may spend all of its movement this round to make two scything talon attacks against a target within reach as a bonus action."
+								]
+							}
+						],
+						"tokenUrl": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg",
+						"fluff": {
+							"entries": [
+								"Termagants are fast, agile and cunning Tyranid creatures of the Gaunt genus. While not very strong individually, Termagants will overwhelm much more elite foes with superior numbers and support from larger Tyranid breeds."
+							],
+							"images": [
+								{
+									"type": "image",
+									"href": {
+										"type": "external",
+										"url": "https://wh40k.lexicanum.com/mediawiki/images/thumb/6/67/Termagant_artwork.jpg/300px-Termagant_artwork.jpg"
+									}
+								}
+							]
+						},
+						"skill": {
+							"athletics": "+8"
+						},
+						"languages": [
+							"Tyranid Telepathy"
+						],
+						"cr": "10",
+						"conditionInflict": [
+							"frightened"
+						],
+						"legendaryActions": 3,
+						"legendaryHeader": [
+							"The monster can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn if it rolls a 5 or 6 on a d6."
+						],
+						"legendary": [
+							{
+								"name": "Monstrous Rending talon Attack",
+								"entries": [
+									"The Broodlord makes one Monstrous rending talon attack."
+								]
+							},
+							{
+								"name": "Wrath of the Hive Mind",
+								"entries": [
+									"Smite. Ranged Spell Attack: {@hit 5} to hit, range 30 ft., one target. {@h}{@damage 6d6} psychic damage. On a 20, the damage increases to {@damage 13d6} psychic damage."
+								]
+							},
+							{
+								"name": "Oh God, So Many Limbs",
+								"entries": [
+									"It can spend 15 feet of movement to escape from nonmagical restraints or being {@condition grappled}.  "
+								]
+							}
+						],
+						"_pTypes": {
+							"types": [
+								"monstrosity",
+								"aberration"
+							],
+							"tags": [],
+							"asText": "Monstrosity or Aberration",
+							"asTextShort": "Monstrosity or Aberration",
+							"typeSidekick": null,
+							"tagsSidekick": [],
+							"asTextSidekick": null
+						},
+						"_pCr": "10",
+						"_fCr": [
+							"10"
+						],
+						"damageTags": [
+							"S"
+						],
+						"savingThrowForced": [
+							"wisdom"
+						]
+					},
+					"m": {
+						"isModified": true,
+						"isPersisted": true,
+						"profSave": {
+							"wis": 1
+						},
+						"profSkill": {},
+						"autoCalc": {
+							"proficiency": true,
+							"hpAverage": true,
+							"hpModifier": true,
+							"passivePerception": true
+						},
+						"ixActiveTab__input": 0,
+						"ixActiveTab__output": 0,
+						"profBonus": 4
+					}
+				},
+				"legendaryGroupBuilder": {
+					"s": {
+						"uniqueId": "1359a229-c93b-4ff2-ac4e-77658df96b6b",
+						"name": "New Legendary Group",
+						"lairActions": [],
+						"regionalEffects": [],
+						"mythicEncounter": [],
+						"source": ""
+					},
+					"m": {
+						"isModified": false,
+						"isPersisted": false
+					}
+				},
+				"spellBuilder": {
+					"s": {
+						"uniqueId": "8441638d-d66b-4fa3-af58-c613e7c773b8",
+						"name": "New Spell",
+						"level": 1,
+						"school": "A",
+						"time": [
+							{
+								"number": 1,
+								"unit": "action"
+							}
+						],
+						"range": {
+							"type": "point",
+							"distance": {
+								"type": "self"
+							}
+						},
+						"duration": [
+							{
+								"type": "instant"
+							}
+						],
+						"classes": {
+							"fromClassList": [
+								{
+									"name": "Wizard",
+									"source": "PHB"
+								}
+							]
+						},
+						"entries": [],
+						"source": ""
+					},
+					"m": {
+						"isModified": false,
+						"isPersisted": false
+					}
+				}
+			}
+		},
+		"DMSCREEN_STORAGE": {
+			"w": 4,
+			"h": 2,
+			"ctc": false,
+			"fs": false,
+			"lk": false,
+			"ps": [
+				{
+					"x": 0,
+					"y": 0,
+					"w": 1,
+					"h": 1,
+					"t": 13,
+					"c": {
+						"a": "LMoP",
+						"c": 0
+					}
+				},
+				{
+					"x": 0,
+					"y": 1,
+					"w": 1,
+					"h": 1,
+					"t": 0
+				},
+				{
+					"x": 1,
+					"y": 0,
+					"w": 1,
+					"h": 1,
+					"t": 0
+				},
+				{
+					"x": 1,
+					"y": 1,
+					"w": 1,
+					"h": 1,
+					"t": 0
+				},
+				{
+					"x": 2,
+					"y": 0,
+					"w": 1,
+					"h": 1,
+					"t": 0
+				},
+				{
+					"x": 2,
+					"y": 1,
+					"w": 1,
+					"h": 1,
+					"t": 0
+				},
+				{
+					"x": 3,
+					"y": 0,
+					"w": 1,
+					"h": 1,
+					"t": 0
+				},
+				{
+					"x": 3,
+					"y": 1,
+					"w": 1,
+					"h": 1,
+					"t": 0
+				}
+			],
+			"ex": []
+		},
+		"SUBLIST_RESIZE_bestiary.html": "75px"
+	}
+}
